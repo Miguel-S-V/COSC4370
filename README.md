@@ -1,3 +1,5 @@
+#COSC 4370 HW Submissions
+
 # hw1
 Homework for Computer Graphics
 
