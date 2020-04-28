@@ -3,9 +3,12 @@
 
 #include "Shape.h"
 
-//adapted from https://github.com/cemuyuk/RayTracing
+
+
+// SOURCE https://github.com/cemuyuk/RayTracing
 
 namespace Raytracer148 {
+	//Setup for sphere object
 	class Sphere : public Shape {
 	public:
 		Sphere(Eigen::Vector3d &center, float radius, Eigen::Vector3d &kamb, Eigen::Vector3d &kdif, Eigen::Vector3d &kspec) :
