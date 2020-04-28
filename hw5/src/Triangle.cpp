@@ -5,9 +5,13 @@ using namespace Raytracer148;
 using namespace Eigen;
 using namespace std;
 
-//adapted from https://github.com/cemuyuk/RayTracing
+
+
+//SOURCE https://github.com/cemuyuk/RayTracing
 
 HitRecord Triangle::intersect(const Ray &ray){
+    
+    //init vars
     HitRecord result;
     result.t=-1;
             
@@ -69,8 +73,11 @@ HitRecord Triangle::intersect(const Ray &ray){
     }
 
     result.t=t;
+    
     result.position=ray.origin+result.t*ray.direction;
+    
     result.normal=-(b-a).cross(c-a);
+    
     result.sh=this;
     
     return result;
