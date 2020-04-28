@@ -6,13 +6,14 @@
 #include <vector>
 #include <limits>
 
-//adapted from https://github.com/cemuyuk/RayTracing
+//SOURCE https://github.com/cemuyuk/RayTracing
 
 namespace Raytracer148 {
     class Scene {
         public:
             Scene() {
             lightPos[0] = lightPos[1] = 3;
+                
             lightPos[2] = 0;
             }
 
@@ -23,13 +24,19 @@ namespace Raytracer148 {
             }
 
             void addShape(Shape *s) { shapes.push_back(s); }
+        
+        
             HitRecord closestHit(const Ray &ray);
+        
             Eigen::Vector3d trace(const Ray &ray);
             Eigen::Vector3d traceHelper(const Ray &ray, int counter);
+        
             void render(Image &image);
 
         private:
             std::vector<Shape*> shapes;
+        
+        
             Eigen::Vector3d lightPos;
     };
 }
