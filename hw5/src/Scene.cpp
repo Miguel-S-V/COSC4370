@@ -7,7 +7,9 @@ using namespace Raytracer148;
 using namespace std;
 using namespace Eigen;
 
-//adapted from https://github.com/cemuyuk/RayTracing
+
+
+//SOURCE https://github.com/cemuyuk/RayTracing
 
 HitRecord Scene::closestHit(const Ray &ray) {
     HitRecord result;
