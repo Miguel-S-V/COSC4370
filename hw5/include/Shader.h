@@ -8,7 +8,11 @@
 
 #include <GL/glew.h>
 
-class Shader{	//copied from hw3
+
+//Shader Program from previus homework
+
+
+class Shader{	
 public:
     GLuint Program;
     // Constructor generates the shader on the fly
