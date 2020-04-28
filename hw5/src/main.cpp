@@ -6,7 +6,9 @@
 #include "Shader.h"
 #include <cmath>
 
-//adapted from https://github.com/cemuyuk/RayTracing
+
+
+//SOURCE from https://github.com/cemuyuk/RayTracing
 
 // GLM Mathematics
 #define GLM_FORCE_RADIANS // force everything in radian
@@ -19,6 +21,7 @@ using namespace Raytracer148;
 using namespace Eigen;
 
 int main() {
+    //DECLARE VARS
     Image im(400, 400);
 
     Scene scene;
