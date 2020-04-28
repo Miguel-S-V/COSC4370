@@ -12,8 +12,12 @@ using namespace Eigen;
 //SOURCE https://github.com/cemuyuk/RayTracing
 
 HitRecord Scene::closestHit(const Ray &ray) {
+    
+    
     HitRecord result;
+    
     result.t = -1;
+    
     bool found = false;
 
     for (unsigned int i = 0; i < shapes.size(); i++) {
