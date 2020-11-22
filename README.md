@@ -1,6 +1,8 @@
 # Computer Graphics
 
-Diffrent assignments implementing Computer Graphics fundementals
+Different assignments implementing Computer Graphics fundementals
+For Personal use only
+
 HW1
 
 This assignment can be compiled using g++ hw1.cpp 
